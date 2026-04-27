@@ -428,7 +428,8 @@ const menuData = {
         {
           "ko": "흰밥, 미소 soup",
           "en": "White rice, miso soup",
-          "ja": "白ご飯、味噌汁"
+          "ja": "白ご飯、味噌汁",
+          "dish": "white-rice"
         }
       ]
     },
