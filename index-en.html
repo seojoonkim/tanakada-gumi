@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>TANAKADA-GUMI | タナカダグミ - 일본 전통 요리</title>
+    <title>TANAKADA-GUMI | Traditional Japanese Cuisine</title>
     <link rel="stylesheet" href="style.css">
     <script src="menu-data.js"></script>
 </head>
-<body data-lang="ko">
+<body data-lang="en">
     <div class="container">
         <header class="header">
             <h1 class="restaurant-name">TANAKADA-GUMI</h1>
             <div class="restaurant-name-jp">タナカダグミ</div>
             <div class="restaurant-info">
-                <div>일본 후쿠오카 전통 요리 전문점</div>
-                <div>평균 예산: ¥25,000~30,000 | 세금 10% + 봉사료 10% 별도</div>
-                <div>오또시(전채) ¥1,000 | 음료 최소 1잔 (미주문 시 물값 ¥500)</div>
+                <div>Traditional Japanese Cuisine from Fukuoka</div>
+                <div>Average Budget: ¥25,000~30,000 | 10% Tax + 10% Service Charge</div>
+                <div>Otoshi (appetizer) ¥1,000 | Min 1 drink order (¥500 water fee otherwise)</div>
             </div>
             <div class="lang-switch">
-                <a href="index.html" class="lang-btn active">한국어</a>
-                <a href="index-en.html" class="lang-btn">English</a>
+                <a href="index.html" class="lang-btn">한국어</a>
+                <a href="index-en.html" class="lang-btn active">English</a>
                 <a href="index-ja.html" class="lang-btn">日本語</a>
             </div>
         </header>
@@ -29,29 +29,29 @@
         </div>
 
         <nav class="nav">
-            <a href="#course" class="nav-button">코스</a>
-            <a href="#beef" class="nav-button">사가 와규</a>
-            <a href="#recommended" class="nav-button">셰프 추천</a>
-            <a href="#donburi" class="nav-button">돈부리</a>
-            <a href="#hotpot" class="nav-button">전골</a>
-            <a href="#sashimi" class="nav-button">사시미</a>
-            <a href="chatbot.html?lang=ko" class="nav-button">메뉴 문의</a>
+            <a href="#course" class="nav-button">Course</a>
+            <a href="#beef" class="nav-button">Saga Wagyu</a>
+            <a href="#recommended" class="nav-button">Chef's Pick</a>
+            <a href="#donburi" class="nav-button">Donburi</a>
+            <a href="#hotpot" class="nav-button">Hot Pot</a>
+            <a href="#sashimi" class="nav-button">Sashimi</a>
+            <a href="chatbot.html?lang=en" class="nav-button">Ask Menu</a>
         </nav>
 
         <section id="course" class="menu-section course-section">
             <div class="section-image">
                 <img src="images/menu-2.jpg" alt="Dinner Course" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 class="course-title">Dinner Course</h2>
             <div class="course-price">¥22,800</div>
-            <div class="course-description">계절 모둠 사시미, 특선 요리 2종, 계절 튀김, 사가 와규 안심 구이, 계절 생선 요리, 밥 & 미소 soup, 디저트</div>
+            <div class="course-description">Seasonal Assorted Sashimi, Today's Special Dish ×2, Seasonal Fried Food, Grilled Tenderloin of Saga Beef, Seasonal Fish Dish, Rice & Miso Soup, Dessert</div>
         </section>
         
         <section id="beef" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-4.jpg" alt="beef menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="beef"></h2>
             <div class="menu-category">
@@ -61,7 +61,7 @@
         <section id="chicken-pork" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-4.jpg" alt="chickenPork menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="chickenPork"></h2>
             <div class="menu-category">
@@ -71,7 +71,7 @@
         <section id="recommended" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-5.jpg" alt="recommended menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="recommended"></h2>
             <div class="menu-category">
@@ -81,7 +81,7 @@
         <section id="fish" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-5.jpg" alt="fish menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="fish"></h2>
             <div class="menu-category">
@@ -91,7 +91,7 @@
         <section id="donburi" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-6.jpg" alt="donburi menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="donburi"></h2>
             <div class="menu-category">
@@ -101,7 +101,7 @@
         <section id="rice" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-6.jpg" alt="rice menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="rice"></h2>
             <div class="menu-category">
@@ -111,7 +111,7 @@
         <section id="hotpot" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-3.jpg" alt="hotPot menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="hotPot"></h2>
             <div class="menu-category">
@@ -121,7 +121,7 @@
         <section id="sashimi" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-8.jpg" alt="sashimi menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="sashimi"></h2>
             <div class="menu-category">
@@ -131,7 +131,7 @@
         <section id="special" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-8.jpg" alt="special menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="special"></h2>
             <div class="menu-category">
@@ -141,7 +141,7 @@
         <section id="mini-dishes" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-7.jpg" alt="miniDishes menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="miniDishes"></h2>
             <div class="menu-category">
@@ -151,7 +151,7 @@
         <section id="sauces" class="menu-section">
             <div class="section-image">
                 <img src="images/menu-8.jpg" alt="sauces menu" loading="lazy" onclick="openLightbox(this.src)">
-                <div class="section-image-hint">🔍 메뉴판 사진 크게 보기</div>
+                <div class="section-image-hint">🔍 View Menu Photo</div>
             </div>
             <h2 data-section-title="sauces"></h2>
             <div class="menu-category">
@@ -169,7 +169,7 @@
     <button class="chatbot-toggle" onclick="openChatbot()">💬</button>
 
     <script>
-    const LANG = "ko";
+    const LANG = "en";
 
     function renderAll() {
         // 섹션 타이틀
