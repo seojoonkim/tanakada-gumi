@@ -186,12 +186,19 @@
             const specialLabel = menuData.labels[LANG].specialTag;
             cat.items.forEach(item => {
                 const div = document.createElement("div");
-                div.className = "menu-item";
-                let html = `<div class="item-name">${item[LANG]}`;
+                div.className = "menu-item" + (item.dish ? "" : " no-photo");
+                let html = "";
+                if (item.dish) {
+                    const src = `images/dishes/${item.dish}.jpg`;
+                    html += `<div class="dish-photo"><img src="${src}" alt="${item[LANG]}" loading="lazy" onclick="openLightbox(this.src)"></div>`;
+                }
+                html += `<div class="dish-text">`;
+                html += `<div class="item-name">${item[LANG]}`;
                 if (item.special) html += ` <span class="special-tag">${specialLabel}</span>`;
                 html += `</div>`;
                 if (LANG !== "en" && item.en) html += `<div class="item-name-en">${item.en}</div>`;
                 if (item.desc) html += `<div class="item-description">${item.desc[LANG] || item.desc.en || ""}</div>`;
+                html += `</div>`;
                 div.innerHTML = html;
                 container.appendChild(div);
             });

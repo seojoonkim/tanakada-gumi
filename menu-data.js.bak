@@ -96,25 +96,19 @@ const menuData = {
       "image": "menu-4.jpg",
       "items": [
         {
-          "dish": "wagyu-tenderloin",
           "ko": "사가 와규 안심 구이",
           "en": "Grilled beef tenderloin",
-          "ja": "佐賀牛ヒレ炭火焼き",
-          "image": "dishes/wagyu-tenderloin.jpg"
+          "ja": "佐賀牛ヒレ炭火焼き"
         },
         {
-          "dish": "wagyu-tongue",
           "ko": "사가 와규 혀 구이",
           "en": "Grilled beef tongue",
-          "ja": "牛タン炭火焼き",
-          "image": "dishes/wagyu-tongue.jpg"
+          "ja": "牛タン炭火焼き"
         },
         {
-          "dish": "wagyu-cutlet",
           "ko": "와규 카츠",
           "en": "Beef cutlet",
-          "ja": "牛カツ",
-          "image": "dishes/wagyu-cutlet.jpg"
+          "ja": "牛カツ"
         }
       ]
     },
@@ -127,39 +121,29 @@ const menuData = {
       "image": "menu-4.jpg",
       "items": [
         {
-          "dish": "chicken-thigh",
           "ko": "닭다리살 구이",
           "en": "Grilled chicken thigh",
-          "ja": "鶏もも肉の炭火焼き",
-          "image": "dishes/chicken-thigh.jpg"
+          "ja": "鶏もも肉の炭火焼き"
         },
         {
-          "dish": "fried-chicken-tartar",
           "ko": "타르트소스 닭튀김",
           "en": "Deep fried chicken with tartar sauce",
-          "ja": "鶏唐揚げタルタルソース",
-          "image": "dishes/fried-chicken-tartar.jpg"
+          "ja": "鶏唐揚げタルタルソース"
         },
         {
-          "dish": "chicken-gizzard",
           "ko": "닭 모래집 구이",
           "en": "Grilled chicken gizzard",
-          "ja": "砂ずり炭火焼き",
-          "image": "dishes/chicken-gizzard.jpg"
+          "ja": "砂ずり炭火焼き"
         },
         {
-          "dish": "grilled-pork",
           "ko": "고기 구이",
           "en": "Grilled pork",
-          "ja": "豚肉炭火焼き",
-          "image": "dishes/grilled-pork.jpg"
+          "ja": "豚肉炭火焼き"
         },
         {
-          "dish": "grilled-pork",
           "ko": "된장 구이",
           "en": "Grilled pork with miso",
-          "ja": "豚肉味噌焼き",
-          "image": "dishes/pork-miso.jpg"
+          "ja": "豚肉味噌焼き"
         }
       ]
     },
@@ -172,89 +156,65 @@ const menuData = {
       "image": "menu-5.jpg",
       "items": [
         {
-          "dish": "fried-fatty-tuna",
           "ko": "참치 뱃살 튀김",
           "en": "Deep fried fatty tuna",
-          "ja": "本マグロ大トロのカツ",
-          "image": "dishes/fried-fatty-tuna.jpg"
+          "ja": "本マグロ大トロのカツ"
         },
         {
-          "dish": "abalone-butter",
           "ko": "버터 전복구이",
           "en": "Butter sautéed abalone",
-          "ja": "アワビのバターソテー",
-          "image": "dishes/abalone-butter.jpg"
+          "ja": "アワビのバターソテー"
         },
         {
-          "dish": "caviar",
           "ko": "캐비어",
           "en": "Caviar",
-          "ja": "キャビア",
-          "image": "dishes/caviar.jpg"
+          "ja": "キャビア"
         },
         {
-          "dish": "ham-cutlet",
           "ko": "햄 커틀렛",
           "en": "Ham cutlet",
           "ja": "ハムカツ",
-          "special": true,
-          "image": "dishes/ham-cutlet.jpg"
+          "special": true
         },
         {
-          "dish": "fried-tiger-prawn",
           "ko": "왕새우 튀김",
           "en": "Deep fried tiger prawn",
-          "ja": "車海老の天ぷら",
-          "image": "dishes/fried-tiger-prawn.jpg"
+          "ja": "車海老の天ぷら"
         },
         {
-          "dish": "salt-grilled-prawn",
           "ko": "왕새우 소금구이",
           "en": "Salt-grilled tiger prawn",
-          "ja": "車海老の塩焼き",
-          "image": "dishes/salt-grilled-prawn.jpg"
+          "ja": "車海老の塩焼き"
         },
         {
-          "dish": "grilled-eel",
           "ko": "장어구이",
           "en": "Grilled eel",
-          "ja": "鰻の蒲焼き",
-          "image": "dishes/grilled-eel.jpg"
+          "ja": "鰻の蒲焼き"
         },
         {
-          "dish": "grilled-eel",
           "ko": "무조림 장어구이",
           "en": "Unseasoned grilled eel",
-          "ja": "鰻の白焼き",
-          "image": "dishes/shirayaki-eel.jpg"
+          "ja": "鰻の白焼き"
         },
         {
-          "dish": "grilled-shiitake",
           "ko": "표고버섯 구이",
           "en": "Grilled shiitake mushrooms",
-          "ja": "椎茸の炭火焼き",
-          "image": "dishes/grilled-shiitake.jpg"
+          "ja": "椎茸の炭火焼き"
         },
         {
-          "dish": "agedashi-tofu",
           "ko": "두부 튀김",
           "en": "Deep-fried tofu",
-          "ja": "揚げ出し豆腐",
-          "image": "dishes/agedashi-tofu.jpg"
+          "ja": "揚げ出し豆腐"
         },
         {
-          "dish": "house-salad",
           "ko": "계절 채소 샐러드",
           "en": "House salad",
-          "ja": "季節野菜のサラダ",
-          "image": "dishes/house-salad.jpg"
+          "ja": "季節野菜のサラダ"
         },
         {
-          "dish": "potato-salad",
           "ko": "감자 샐러드",
           "en": "Potato salad",
-          "ja": "ポテトサラダ",
-          "image": "dishes/potato-salad.jpg"
+          "ja": "ポテトサラダ"
         }
       ]
     },
@@ -267,39 +227,29 @@ const menuData = {
       "image": "menu-5.jpg",
       "items": [
         {
-          "dish": "grilled-nodoguro",
           "ko": "노도구로 구이",
           "en": "Grilled nodoguro/red seabass",
-          "ja": "のどぐろ塩焼き",
-          "image": "dishes/grilled-nodoguro.jpg"
+          "ja": "のどぐろ塩焼き"
         },
         {
-          "dish": "salt-grilled-tuna",
           "ko": "소금구이 참치 뱃살",
           "en": "Salt-grilled fatty tuna",
-          "ja": "本マグロ大トロの塩焼き",
-          "image": "dishes/salt-grilled-tuna.jpg"
+          "ja": "本マグロ大トロの塩焼き"
         },
         {
-          "dish": "grilled-kichiji",
           "ko": "킨키 벵에돔 구이",
           "en": "Grilled kichiji rockfish",
-          "ja": "きんき塩焼き",
-          "image": "dishes/grilled-kichiji.jpg"
+          "ja": "きんき塩焼き"
         },
         {
-          "dish": "braised-nodoguro",
           "ko": "노도구로 조림",
           "en": "Braised nodoguro",
-          "ja": "のどぐろ煮付け",
-          "image": "dishes/braised-nodoguro.jpg"
+          "ja": "のどぐろ煮付け"
         },
         {
-          "dish": "braised-kichiji",
           "ko": "킨키 벵에돔 조림",
           "en": "Braised kichiji rockfish",
-          "ja": "きんき煮付け",
-          "image": "dishes/braised-kichiji.jpg"
+          "ja": "きんき煮付け"
         }
       ]
     },
@@ -312,7 +262,6 @@ const menuData = {
       "image": "menu-6.jpg",
       "items": [
         {
-          "dish": "bubble-don",
           "ko": "버블 돈",
           "en": "Bubble-Don",
           "ja": "バブル丼",
@@ -320,11 +269,9 @@ const menuData = {
             "ko": "게, 캐비어",
             "en": "Crab, caviar",
             "ja": "蟹、キャビア"
-          },
-          "image": "dishes/bubble-don.jpg"
+          }
         },
         {
-          "dish": "zetsu-don",
           "ko": "젯소 돈",
           "en": "Zetsu-Don",
           "ja": "贅沢丼",
@@ -333,11 +280,9 @@ const menuData = {
             "ko": "대뱃살, 연어알, 성게알",
             "en": "Fatty tuna, salmon roe, sea urchin",
             "ja": "大トロ、いくら、うに"
-          },
-          "image": "dishes/zetsu-don.jpg"
+          }
         },
         {
-          "dish": "uni-don",
           "ko": "우니 돈",
           "en": "Uni-Don",
           "ja": "うに丼",
@@ -345,11 +290,9 @@ const menuData = {
             "ko": "성게알",
             "en": "Sea urchin",
             "ja": "うに"
-          },
-          "image": "dishes/uni-don.jpg"
+          }
         },
         {
-          "dish": "tanakada-don",
           "ko": "타나카다 돈",
           "en": "Tanakada-Don",
           "ja": "タナカダ丼",
@@ -357,11 +300,9 @@ const menuData = {
             "ko": "모둠 사시미",
             "en": "Assorted sashimi",
             "ja": "お造り盛り合わせ"
-          },
-          "image": "dishes/tanakada-don.jpg"
+          }
         },
         {
-          "dish": "ikura-don",
           "ko": "이쿠라 돈",
           "en": "Ikura-Don",
           "ja": "いくら丼",
@@ -369,11 +310,9 @@ const menuData = {
             "ko": "연어알",
             "en": "Salmon roe",
             "ja": "いくら"
-          },
-          "image": "dishes/ikura-don.jpg"
+          }
         },
         {
-          "dish": "ikura-don",
           "ko": "우니 이쿠라 돈",
           "en": "Uni Ikura-Don",
           "ja": "うにいくら丼",
@@ -381,11 +320,9 @@ const menuData = {
             "ko": "성게알 & 연어알",
             "en": "Sea urchin & salmon roe",
             "ja": "うに&いくら"
-          },
-          "image": "dishes/uni-ikura-don.jpg"
+          }
         },
         {
-          "dish": "torotekka-don",
           "ko": "토로테카 돈",
           "en": "Torotekka-Don",
           "ja": "トロ鉄火丼",
@@ -393,8 +330,7 @@ const menuData = {
             "ko": "대뱃살",
             "en": "Fatty tuna",
             "ja": "大トロ"
-          },
-          "image": "dishes/torotekka-don.jpg"
+          }
         }
       ]
     },
@@ -407,26 +343,20 @@ const menuData = {
       "image": "menu-6.jpg",
       "items": [
         {
-          "dish": "tkg-rice",
           "ko": "생달걀 올린 밥",
           "en": "Raw egg on rice",
-          "ja": "卵かけご飯",
-          "image": "dishes/tkg-rice.jpg"
+          "ja": "卵かけご飯"
         },
         {
-          "dish": "beef-curry",
           "ko": "소고기 카레 & 라이스",
           "en": "Beef curry & rice",
           "ja": "ビーフカレーライス",
-          "special": true,
-          "image": "dishes/beef-curry.jpg"
+          "special": true
         },
         {
-          "dish": "mentaiko-rice",
           "ko": "코다추 추천 밥",
           "en": "Spicy cod roe rice",
-          "ja": "明太子&高菜ご飯",
-          "image": "dishes/mentaiko-rice.jpg"
+          "ja": "明太子&高菜ご飯"
         },
         {
           "ko": "흰밥, 미소 soup",
@@ -444,7 +374,6 @@ const menuData = {
       "image": "menu-3.jpg",
       "items": [
         {
-          "dish": "mizutaki",
           "ko": "미즈타키 (MIZUTAKI)",
           "en": "Mizutaki",
           "ja": "水炊き",
@@ -452,11 +381,9 @@ const menuData = {
             "ko": "하카타식 백탕 (닭고기와 채소, 폰즈소스)",
             "en": "Hakata-style white broth hot pot with chicken and vegetables, ponzu sauce",
             "ja": "博多風白湯鍋(鶏肉と野菜、ポン酢)"
-          },
-          "image": "dishes/mizutaki.jpg"
+          }
         },
         {
-          "dish": "negima",
           "ko": "네기마 (NEGIMA)",
           "en": "Negima",
           "ja": "ねぎま",
@@ -464,8 +391,7 @@ const menuData = {
             "ko": "대뱃살과 흰파 전골",
             "en": "Fatty tuna and white onion hot pot",
             "ja": "大トロと白ねぎの鍋"
-          },
-          "image": "dishes/negima.jpg"
+          }
         }
       ]
     },
@@ -478,53 +404,39 @@ const menuData = {
       "image": "menu-8.jpg",
       "items": [
         {
-          "dish": "sashimi-assorted",
           "ko": "모둠 사시미",
           "en": "Assorted sashimi",
-          "ja": "お造り盛り合わせ",
-          "image": "dishes/sashimi-assorted.jpg"
+          "ja": "お造り盛り合わせ"
         },
         {
-          "dish": "fatty-tuna",
           "ko": "참치 대뱃살",
           "en": "Fatty tuna",
-          "ja": "本マグロ大トロ",
-          "image": "dishes/fatty-tuna.jpg"
+          "ja": "本マグロ大トロ"
         },
         {
-          "dish": "red-meat-tuna",
           "ko": "참치 붉은살",
           "en": "Lean tuna",
-          "ja": "本マグロ赤身",
-          "image": "dishes/red-meat-tuna.jpg"
+          "ja": "本マグロ赤身"
         },
         {
-          "dish": "squid",
           "ko": "광어/오징어",
           "en": "Flounder/Squid",
-          "ja": "ヒラメ/イカ",
-          "image": "dishes/squid.jpg"
+          "ja": "ヒラメ/イカ"
         },
         {
-          "dish": "fatty-tuna",
           "ko": "참치 대뱃살 구이",
           "en": "Grilled fatty tuna",
-          "ja": "大トロの炙り",
-          "image": "dishes/grilled-fatty-tuna.jpg"
+          "ja": "大トロの炙り"
         },
         {
-          "dish": "red-meat-tuna",
           "ko": "참치 붉은살 구이",
           "en": "Grilled lean tuna",
-          "ja": "赤身の炙り",
-          "image": "dishes/red-meat-tuna.jpg"
+          "ja": "赤身の炙り"
         },
         {
-          "dish": "mackerel-sesame",
           "ko": "깐 고등어 초회",
           "en": "Marinated mackerel",
-          "ja": "〆鯖",
-          "image": "dishes/mackerel-sesame.jpg"
+          "ja": "〆鯖"
         }
       ]
     },
@@ -537,18 +449,14 @@ const menuData = {
       "image": "menu-8.jpg",
       "items": [
         {
-          "dish": "sea-urchin",
           "ko": "성게알",
           "en": "Sea urchin",
-          "ja": "うに",
-          "image": "dishes/sea-urchin.jpg"
+          "ja": "うに"
         },
         {
-          "dish": "steamed-crab",
           "ko": "쪄낸 게",
           "en": "Steamed crab",
-          "ja": "蒸し蟹",
-          "image": "dishes/steamed-crab.jpg"
+          "ja": "蒸し蟹"
         }
       ]
     },
@@ -561,123 +469,89 @@ const menuData = {
       "image": "menu-7.jpg",
       "items": [
         {
-          "dish": "stewed-eggplant",
           "ko": "가지 조림",
           "en": "Braised eggplant",
-          "ja": "茄子の煮物",
-          "image": "dishes/stewed-eggplant.jpg"
+          "ja": "茄子の煮物"
         },
         {
-          "dish": "hakata-stew",
           "ko": "하카타식 닭고기/채소 조림",
           "en": "Hakata-style braised chicken/vegetables",
-          "ja": "博多風がめ煮",
-          "image": "dishes/hakata-stew.jpg"
+          "ja": "博多風がめ煮"
         },
         {
-          "dish": "squid-ginger-cake",
           "ko": "오징어 생강 어묵",
           "en": "Squid ginger fish cake",
-          "ja": "イカの生姜揚げ",
-          "image": "dishes/squid-ginger-cake.jpg"
+          "ja": "イカの生姜揚げ"
         },
         {
-          "dish": "stewed-wing",
           "ko": "닭날개 조림",
           "en": "Braised chicken wings",
-          "ja": "鶏手羽の煮物",
-          "image": "dishes/stewed-wing.jpg"
+          "ja": "鶏手羽の煮物"
         },
         {
-          "dish": "fried-wing",
           "ko": "닭날개 튀김",
           "en": "Fried chicken wings",
-          "ja": "鶏手羽の唐揚げ",
-          "image": "dishes/fried-wing.jpg"
+          "ja": "鶏手羽の唐揚げ"
         },
         {
-          "dish": "karasumi",
           "ko": "명란젓(다시마 말이)",
           "en": "Spicy cod roe (kelp roll)",
-          "ja": "明太子の昆布巻き",
-          "image": "dishes/karasumi.jpg"
+          "ja": "明太子の昆布巻き"
         },
         {
-          "dish": "tatami-iwashi",
           "ko": "멸치 조림",
           "en": "Braised anchovy",
-          "ja": "煮干しの佃煮",
-          "image": "dishes/tatami-iwashi.jpg"
+          "ja": "煮干しの佃煮"
         },
         {
-          "dish": "itawasa",
           "ko": "오다리 어묵",
           "en": "Flounder fish cake",
-          "ja": "ヒラメのかまぼこ",
-          "image": "dishes/itawasa.jpg"
+          "ja": "ヒラメのかまぼこ"
         },
         {
-          "dish": "salmon-roe",
           "ko": "연어알",
           "en": "Salmon roe",
-          "ja": "いくら",
-          "image": "dishes/salmon-roe.jpg"
+          "ja": "いくら"
         },
         {
-          "dish": "fresh-mentaiko",
           "ko": "명란젓(날것/구이)",
           "en": "Spicy cod roe (raw/grilled)",
-          "ja": "明太子(生/焼き)",
-          "image": "dishes/fresh-mentaiko.jpg"
+          "ja": "明太子(生/焼き)"
         },
         {
-          "dish": "canned-mackerel",
           "ko": "캔 갈치",
           "en": "Canned hairtail fish",
-          "ja": "太刀魚の缶詰",
-          "image": "dishes/grilled-mentaiko.jpg"
+          "ja": "太刀魚の缶詰"
         },
         {
-          "dish": "korean-seaweed",
           "ko": "김밥(한국식)",
           "en": "Korean-style kimbap",
-          "ja": "韓国風のり巻き",
-          "image": "dishes/canned-mackerel.jpg"
+          "ja": "韓国風のり巻き"
         },
         {
-          "dish": "garlic-toast",
           "ko": "마늘토스트",
           "en": "Garlic toast",
-          "ja": "ガーリックトースト",
-          "image": "dishes/korean-seaweed.jpg"
+          "ja": "ガーリックトースト"
         },
         {
-          "dish": "okonomiyaki",
           "ko": "오코노미야키",
           "en": "Okonomiyaki",
-          "ja": "お好み焼き",
-          "image": "dishes/garlic-toast.jpg"
+          "ja": "お好み焼き"
         },
         {
-          "dish": "tamagoyaki",
           "ko": "달걀말이",
           "en": "Rolled omelet",
-          "ja": "だし巻き玉子",
-          "image": "dishes/okonomiyaki.jpg"
+          "ja": "だし巻き玉子"
         },
         {
-          "dish": "steamed-veggies",
           "ko": "쪄낸 채소",
           "en": "Steamed vegetables",
-          "ja": "蒸し野菜",
-          "image": "dishes/tamagoyaki.jpg"
+          "ja": "蒸し野菜"
         },
         {
-          "dish": "pickled-cabbage",
           "ko": "양배추 피클",
           "en": "Cabbage pickles",
-          "ja": "キャベツの漬物",
-          "image": "dishes/steamed-veggies.jpg"
+          "ja": "キャベツの漬物"
         }
       ]
     },

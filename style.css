@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Noto+Sans+JP:wght@300;500;700&family=Inter:wght@300;400;500&display=swap');
+
 /* Reset and Base Styles */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -188,6 +190,33 @@ h3 { font-size: 1.3rem; color: #f5f2e8; margin: 1.5rem 0 0.8rem 0; }
   margin-bottom: 0.8rem;
   padding: 0.5rem 0;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.item-photo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.item-photo img:hover {
+  transform: scale(1.1);
+}
+
+.item-text {
+  flex: 1;
 }
 .menu-item:last-child { border-bottom: none; }
 .item-name { font-weight: 500; color: #f5f2e8; margin-bottom: 0.2rem; }
@@ -257,3 +286,130 @@ h3 { font-size: 1.3rem; color: #f5f2e8; margin: 1.5rem 0 0.8rem 0; }
 .menu-section { animation: fadeInUp 0.6s ease-out; }
 .menu-category { transition: transform 0.2s ease; }
 .menu-category:hover { transform: translateY(-2px); background: rgba(255, 255, 255, 0.05); }
+
+/* ============================================================
+   Per-dish card with thumbnail (Izakaya premium look)
+   Added 2026-04-27 — replaces the original "menu-item" simple list
+============================================================ */
+[data-items] {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(212, 175, 55, 0.12);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(20,20,20,0.6) 0%, rgba(10,10,10,0.85) 100%);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+}
+.menu-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6), 0 0 16px rgba(255, 68, 68, 0.08);
+}
+.menu-item .dish-photo {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+.menu-item .dish-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  cursor: zoom-in;
+}
+.menu-item:hover .dish-photo img { transform: scale(1.06); }
+.menu-item .dish-text {
+  padding: 0.7rem 0.9rem 0.9rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.menu-item .item-name {
+  color: #f5f0e8;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.menu-item .item-name-en {
+  color: #b89968;
+  font-size: 0.78rem;
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+.menu-item .item-description {
+  font-size: 0.75rem;
+  color: #8e8e8e;
+  margin-top: 0.2rem;
+  line-height: 1.4;
+}
+.menu-item .special-tag {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff4444, #ff6b6b);
+  color: #1a1a1a;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  margin-left: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 0 8px rgba(255, 68, 68, 0.3);
+}
+.menu-item.no-photo .dish-photo {
+  display: none;
+}
+.menu-item.no-photo .dish-text {
+  padding: 1.1rem 1rem;
+}
+
+/* Neon glow accent on category headers */
+[data-section-title] {
+  position: relative;
+  display: inline-block;
+  padding-right: 1.5rem;
+}
+[data-section-title]::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff4444 0%, #d4af37 50%, transparent 100%);
+  box-shadow: 0 0 8px rgba(255, 68, 68, 0.5);
+}
+
+/* Hero pulse effect for restaurant name */
+@keyframes neonPulse {
+  0%, 100% { text-shadow: 0 0 8px rgba(212, 175, 55, 0.5), 0 0 16px rgba(212, 175, 55, 0.3), 0 2px 4px rgba(0,0,0,0.6); }
+  50%      { text-shadow: 0 0 12px rgba(212, 175, 55, 0.8), 0 0 24px rgba(212, 175, 55, 0.5), 0 2px 4px rgba(0,0,0,0.6); }
+}
+.restaurant-name {
+  animation: neonPulse 4s ease-in-out infinite;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  [data-items] { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .menu-item .item-name { font-size: 0.85rem; }
+  .menu-item .item-name-en { font-size: 0.7rem; }
+  .menu-item .dish-text { padding: 0.5rem 0.6rem 0.7rem 0.6rem; }
+}
+@media (max-width: 480px) {
+  [data-items] { grid-template-columns: 1fr 1fr; }
+}
