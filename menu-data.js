@@ -410,23 +410,20 @@ const menuData = {
           "dish": "tkg-rice",
           "ko": "생달걀 올린 밥",
           "en": "Raw egg on rice",
-          "ja": "卵かけご飯",
-          "image": "dishes/tkg-rice.jpg"
+          "ja": "卵かけご飯"
         },
         {
           "dish": "beef-curry",
           "ko": "소고기 카레 & 라이스",
           "en": "Beef curry & rice",
           "ja": "ビーフカレーライス",
-          "special": true,
-          "image": "dishes/beef-curry.jpg"
+          "special": true
         },
         {
           "dish": "mentaiko-rice",
           "ko": "코다추 추천 밥",
           "en": "Spicy cod roe rice",
-          "ja": "明太子&高菜ご飯",
-          "image": "dishes/mentaiko-rice.jpg"
+          "ja": "明太子&高菜ご飯"
         },
         {
           "ko": "흰밥, 미소 soup",

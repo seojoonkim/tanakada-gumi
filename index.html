@@ -165,7 +165,19 @@
     }
     document.addEventListener("keydown", e => { if (e.key === "Escape") closeLightbox(); });
 
-    document.addEventListener("DOMContentLoaded", renderAll);
+    document.addEventListener("DOMContentLoaded", () => {
+        renderAll();
+        // Scroll fade-in animation
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add("in-view");
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+        document.querySelectorAll(".menu-section").forEach(s => io.observe(s));
+    });
 
     document.querySelectorAll('a[href^="#"]').forEach(a => {
         a.addEventListener("click", e => {
