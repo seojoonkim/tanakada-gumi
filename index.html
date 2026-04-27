@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TANAKADA-GUMI | タナカダグミ - 일본 전통 요리</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="menu-data.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="restaurant-name">TANAKADA-GUMI</h1>
+            <div class="restaurant-name-jp">タナカダグミ</div>
+            <div class="restaurant-info">
+                <div>일본 후쿠오카 전통 요리 전문점</div>
+                <div>평균 예산: ¥25,000~30,000 | 세금 10% + 봉사료 10% 별도</div>
+                <div>오또시(전채) ¥1,000 | 음료 최소 1잔 (미주문 시 물값 ¥500)</div>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <a href="#course" class="nav-button">코스 메뉴</a>
+            <a href="#beef" class="nav-button">사가 와규</a>
+            <a href="#recommended" class="nav-button">셰프 추천</a>
+            <a href="#donburi" class="nav-button">돈부리</a>
+            <a href="#hotpot" class="nav-button">전골</a>
+            <a href="#sashimi" class="nav-button">사시미</a>
+            <a href="chatbot.html" class="nav-button">메뉴 문의</a>
+        </nav>
+
+        <section id="course" class="menu-section course-section">
+            <h2 class="course-title">Dinner Course</h2>
+            <div class="course-price">¥22,800</div>
+            <div class="course-description">
+                계절 모둠 사시미, 특선 요리 2종, 계절 튀김, 사가 와규 안심 구이, 
+                계절 생선 요리, 밥 & 미소 soup, 디저트
+            </div>
+        </section>
+
+        <div class="menu-grid">
+            <section id="beef" class="menu-section">
+                <h2>Beef (사가 와규)</h2>
+                <div class="menu-category">
+                    <div id="beef-items"></div>
+                </div>
+            </section>
+
+            <section id="chicken-pork" class="menu-section">
+                <h2>Chicken & Pork</h2>
+                <div class="menu-category">
+                    <div id="chicken-pork-items"></div>
+                </div>
+            </section>
+        </div>
+
+        <section id="recommended" class="menu-section">
+            <h2>Chef's Recommended</h2>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <div id="recommended-items"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu-grid">
+            <section id="fish" class="menu-section">
+                <h2>Fish</h2>
+                <div class="menu-category">
+                    <div id="fish-items"></div>
+                </div>
+            </section>
+
+            <section id="donburi" class="menu-section">
+                <h2>Donburi (S/M/L)</h2>
+                <div class="menu-category">
+                    <div id="donburi-items"></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="menu-grid">
+            <section id="rice" class="menu-section">
+                <h2>Rice</h2>
+                <div class="menu-category">
+                    <div id="rice-items"></div>
+                </div>
+            </section>
+
+            <section id="hotpot" class="menu-section">
+                <h2>Hot Pot</h2>
+                <div class="menu-category">
+                    <div id="hotpot-items"></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="menu-grid">
+            <section id="sashimi" class="menu-section">
+                <h2>Sashimi</h2>
+                <div class="menu-category">
+                    <div id="sashimi-items"></div>
+                </div>
+            </section>
+
+            <section id="special" class="menu-section">
+                <h2>추천 (Special Recommendations)</h2>
+                <div class="menu-category">
+                    <div id="special-items"></div>
+                </div>
+            </section>
+        </div>
+
+        <section class="menu-section">
+            <h2>Mini Dishes</h2>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <div id="mini-dishes-items"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>소스 (Sauces)</h2>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <div id="sauces-items"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <button class="chatbot-toggle" onclick="openChatbot()">💬</button>
+
+    <script>
+        // 메뉴 아이템을 렌더링하는 함수
+        function renderMenuItems(categoryKey, containerId) {
+            const container = document.getElementById(containerId);
+            const category = menuData.categories[categoryKey];
+            
+            if (!category || !container) return;
+            
+            category.items.forEach(item => {
+                const menuItem = document.createElement('div');
+                menuItem.className = 'menu-item';
+                
+                let html = `
+                    <div class="item-name">
+                        ${item.name}
+                        ${item.special ? `<span class="special-tag">${item.special}</span>` : ''}
+                    </div>
+                    <div class="item-name-en">${item.nameEn}</div>
+                `;
+                
+                if (item.description) {
+                    html += `<div class="item-description">${item.description}</div>`;
+                }
+                
+                menuItem.innerHTML = html;
+                container.appendChild(menuItem);
+            });
+        }
+
+        // 페이지 로드 시 모든 메뉴 아이템 렌더링
+        document.addEventListener('DOMContentLoaded', function() {
+            renderMenuItems('beef', 'beef-items');
+            renderMenuItems('chickenPork', 'chicken-pork-items');
+            renderMenuItems('recommended', 'recommended-items');
+            renderMenuItems('fish', 'fish-items');
+            renderMenuItems('donburi', 'donburi-items');
+            renderMenuItems('rice', 'rice-items');
+            renderMenuItems('hotPot', 'hotpot-items');
+            renderMenuItems('sashimi', 'sashimi-items');
+            renderMenuItems('special', 'special-items');
+            renderMenuItems('miniDishes', 'mini-dishes-items');
+            renderMenuItems('sauces', 'sauces-items');
+        });
+
+        // 챗봇 열기
+        function openChatbot() {
+            window.open('chatbot.html', '_blank', 'width=400,height=600,scrollbars=yes,resizable=yes');
+        }
+
+        // 스무스 스크롤링
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

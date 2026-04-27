@@ -1,0 +1,297 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #f5f2e8;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #d4af37;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(212, 175, 55, 0.3);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #e6c777;
+  border-bottom: 1px solid rgba(230, 199, 119, 0.3);
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #f5f2e8;
+  margin: 1.5rem 0 0.8rem 0;
+}
+
+/* Container and Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+}
+
+.restaurant-name {
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-name-jp {
+  font-size: 1.2rem;
+  color: #c9c9c9;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.restaurant-info {
+  font-size: 0.9rem;
+  color: #b8b8b8;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #d4af37;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.nav-button:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: #d4af37;
+  color: #f5f2e8;
+  transform: translateY(-2px);
+}
+
+/* Menu Sections */
+.menu-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.menu-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.menu-category {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid #d4af37;
+}
+
+.category-title {
+  color: #e6c777;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.menu-item {
+  margin-bottom: 0.8rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: 500;
+  color: #f5f2e8;
+  margin-bottom: 0.2rem;
+}
+
+.item-name-en {
+  font-size: 0.85rem;
+  color: #a8a8a8;
+  font-style: italic;
+}
+
+.item-description {
+  font-size: 0.8rem;
+  color: #9d9d9d;
+  margin-top: 0.3rem;
+}
+
+.special-tag {
+  background: linear-gradient(45deg, #d4af37, #e6c777);
+  color: #1a1a1a;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+/* Course Section */
+.course-section {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(230, 199, 119, 0.05));
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.course-title {
+  color: #d4af37;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.course-price {
+  font-size: 1.4rem;
+  color: #e6c777;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.course-description {
+  color: #c9c9c9;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Chatbot Button */
+.chatbot-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: linear-gradient(45deg, #d4af37, #e6c777);
+  color: #1a1a1a;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.chatbot-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .nav {
+    gap: 0.5rem;
+  }
+  
+  .nav-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .menu-section {
+    padding: 1rem;
+  }
+  
+  .menu-category {
+    padding: 1rem;
+  }
+  
+  .chatbot-toggle {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.menu-category {
+  transition: transform 0.2s ease;
+}
+
+.menu-category:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.05);
+}
